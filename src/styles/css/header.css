@@ -1,0 +1,31 @@
+#mobile-profile-img{
+	display:block !important
+}
+
+#zhuel{
+	position: absolute;
+}
+
+#hide-menu{
+	display: none !important;
+}
+
+#logout{
+	display: none !important;	
+}
+
+.header-search.pull-right{
+	display: none !important;		
+}
+
+#speech-btn{
+	display: none !important;		
+}
+
+#fullscreen{
+	display: none !important;
+}
+
+ul.header-dropdown-list.hidden-xs.ng-cloak{
+	display: none !important;
+}
