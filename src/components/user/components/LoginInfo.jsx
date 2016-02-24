@@ -15,11 +15,12 @@ let LoginInfo = React.createClass({
 	render: function(){
 		return (
 
-			<div className="login-info">
+			<div className="pull-right-login-info">
 			    <span>
 			        <ToggleShortcut>
-			            <img src={this.state.picture} alt="me"
-							 className="online" /><span>{ this.state.username }</span><i className="fa fa-angle-down" />
+			            {/*<img src={this.state.picture} alt="me"
+							 className="online" />*/}
+						<span>{ this.state.username }</span><i className="fa fa-angle-down" />
 			        </ToggleShortcut>
 			     </span>
 			</div>

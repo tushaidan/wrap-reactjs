@@ -26,6 +26,9 @@ let SmartMenuItem = React.createClass({
     shouldComponentUpdate: function(){
         return false
     },
+    componentDidMount:function(){
+        debugger;
+    },
     _handleNav: function(data){
 
         let item = this.props.item;

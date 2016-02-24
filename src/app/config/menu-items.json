@@ -2,7 +2,7 @@
   "items": [
     {
       "title": "Dashboard",
-
+      "isOpen": true,
       "icon": "fa fa-lg fa-fw fa-home",
       "items": [
         {
