@@ -47,6 +47,7 @@ var scripts = {
 
         "highcharts": "/bower_components/highcharts/highcharts.js",
         "highchartTable": "/bower_components/highchartTable/jquery.highchartTable.js",
+        "echarts":"/bower_components/echarts/dist/echarts.js",
 
         "datatables.net" : "/bower_components/datatables/media/js/jquery.dataTables.min.js",
         "datatables.net-bs" : "/bower_components/datatables/media/js/dataTables.bootstrap.min.js",
@@ -171,7 +172,8 @@ var scripts = {
             'script!dygraphs',
             'script!chartjs',
             'script!highcharts',
-            'script!highchartTable'
+            'script!highchartTable',
+            'echarts'
         ]
 
     },

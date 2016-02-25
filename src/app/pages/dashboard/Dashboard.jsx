@@ -9,6 +9,7 @@ import SubHeader from '../layout/SubHeader.jsx'
 import BigBreadcrumbs from '../../../components/layout/navigation/components/BigBreadcrumbs.jsx'
 
 import LiveView from '../../../components/chat/components/dashBoardView.jsx'
+import LiveChartView from '../../../components/chat/components/dashBoardChartView.jsx'
 
 {/*import BirdEyeWidget from './BirdEyeWidget.jsx'
 import LiveFeeds from './LiveFeeds.jsx'
@@ -32,6 +33,7 @@ let Dashboard = React.createClass({
 
                     <LiveView />
 
+                    <LiveChartView />
 
                     <div className="row">
 

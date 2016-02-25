@@ -27,7 +27,7 @@ let SmartMenuItem = React.createClass({
         return false
     },
     componentDidMount:function(){
-        debugger;
+        //debugger;
     },
     _handleNav: function(data){
 

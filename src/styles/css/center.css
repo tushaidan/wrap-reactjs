@@ -1,0 +1,54 @@
+.dashBorad-div{
+	float: left;
+    margin-top: 15px;
+}
+
+.dashboard-img{
+	width: 70px;
+}
+
+.dashBorad-div-1{
+	margin-top: 15px;
+	float: left;
+    margin-left: 30px;
+}
+
+.dashBorad-div-2{
+	height: 80px;
+	font-size: 50px;
+}
+
+.pricing-big .panel-heading{
+	border-radius: 5px 5px 5px 5px;
+}
+
+.panel-heading{
+	height: 115px;
+}
+
+.dashBorad-p{
+	margin: 0 0 0 0;
+	font-size: 10px;
+	color: rgb(143, 177, 162);
+}
+
+#dashBoradChartView_gauge{
+	height: 225px;
+}
+#dashBoradChartView_line{
+	height: 225px;
+	background-color: rgb(50, 118, 177) !important;
+}
+.chart-bar{
+	background-color: #5ea9f8;
+    border-radius: 10px;
+    height: 8px;
+}
+
+.head-txt{
+	margin-top: 30px;
+	color: white;
+}
+.table>thead>tr{
+	background-image:-webkit-linear-gradient(top,#3276B1 0,#3276B1 100%);
+}
