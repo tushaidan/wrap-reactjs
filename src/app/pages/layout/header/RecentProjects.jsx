@@ -29,6 +29,10 @@ let RecentProjects = React.createClass({
         let projects = this.state.projects;
         return (
             <div className="project-context hidden-xs dropdown">
+
+                <span className="label">
+                    <Msg phrase="Projects" />
+                </span>
                 <span className="project-selector dropdown-toggle" data-toggle="dropdown">
                     <Msg phrase="Recent projects" />
                     { projects.length ?

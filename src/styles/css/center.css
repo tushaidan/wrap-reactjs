@@ -33,10 +33,10 @@
 }
 
 #dashBoradChartView_gauge{
-	height: 225px;
+	height: 400px;
 }
 #dashBoradChartView_line{
-	height: 225px;
+	height: 400px;
 	background-color: rgb(50, 118, 177) !important;
 }
 .chart-bar{

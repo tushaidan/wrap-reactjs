@@ -1,6 +1,13 @@
 import React from 'react'
-import echarts from 'echarts/lib/echarts';
-import 'echarts/lib/chart/gauge';
+import echarts from 'echarts';
+
+let bars = [{
+
+    }, {
+
+    }, {
+
+    }];
 
 let LiveChartViewGauge = React.createClass({
     componentDidMount:function(){
@@ -27,7 +34,22 @@ let LiveChartViewGauge = React.createClass({
     },
 	render:function(){
 		return (
-            <div id="dashBoradChartView_gauge"></div>
+
+            <div className="row">
+                 {
+                    bars.map(function (bar) {
+                      return <div>Hello, {bar.xxx}!</div>
+                    })
+                 }
+                <article className="col-sm-12 col-md-12 col-lg-6">
+
+                </article>
+
+                <article className="col-sm-12 col-md-12 col-lg-6">
+
+                </article>
+
+            </div>
         )
 	}
 });

@@ -27,8 +27,8 @@ let LiveChartView = React.createClass({
                 <div className="col-xs-12 col-sm-4">
                     <LiveChartViewLine />
                 </div>
-                <div className="col-xs-12 col-sm-4" style={{backgroundColor: '#3276B1',height:'225px'}}>
-                    <div className='table-responsive'>
+                <div className="col-xs-12 col-sm-4" style={{backgroundColor: '#3276B1'}}>
+                    <div className='table-responsive' style={{height:'400px'}}>
                         <h6 className='head-txt'>用户体验版本排名</h6>
                         <table  className="table">
                             <thead>

@@ -8,14 +8,11 @@ import WidgetGrid from '../../../components/layout/widgets/WidgetGrid.jsx'
 import SubHeader from '../layout/SubHeader.jsx'
 import BigBreadcrumbs from '../../../components/layout/navigation/components/BigBreadcrumbs.jsx'
 
-import LiveView from '../../../components/chat/components/dashBoardView.jsx'
-import LiveChartView from '../../../components/chat/components/dashBoardChartView.jsx'
-
-{/*import BirdEyeWidget from './BirdEyeWidget.jsx'
+import BirdEyeWidget from './BirdEyeWidget.jsx'
 import LiveFeeds from './LiveFeeds.jsx'
 import ChatWidget from '../../../components/chat/components/ChatWidget.jsx'
 import FullCalendarWidget from '../../../components/calendar/components/FullCalendarWidget.jsx'
-import TodoWidget from '../../../components/todo/components/TodoWidget.jsx'*/}
+import TodoWidget from '../../../components/todo/components/TodoWidget.jsx'
 
 
 let Dashboard = React.createClass({
@@ -26,23 +23,34 @@ let Dashboard = React.createClass({
                 <div className="row">
                     <BigBreadcrumbs items={['Dashboard', 'My Dashboard']}
                                      className="col-xs-12 col-sm-7 col-md-7 col-lg-4" />
-                    {/*<SubHeader />*/}
+                    <SubHeader />
                 </div>
 
                 <WidgetGrid>
 
-                    <LiveView />
+                    <div className="row">
+                        <article className="col-sm-12">
 
-                    <LiveChartView />
+                            <LiveFeeds />
+
+                        </article>
+                    </div>
+
 
                     <div className="row">
 
                         <article className="col-sm-12 col-md-12 col-lg-6">
 
+                            <ChatWidget />
+
+                            <FullCalendarWidget />
                         </article>
 
                         <article className="col-sm-12 col-md-12 col-lg-6">
 
+                            <BirdEyeWidget />
+
+                            <TodoWidget />
                         </article>
                     </div>
                 </WidgetGrid>

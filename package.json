@@ -2,7 +2,7 @@
   "name": "smartadmin-reactjs",
   "version": "1.8.1",
   "description": "",
-  "main": "index.html",
+  "main": "web/index.html",
   "scripts": {
     "build": "./node_modules/.bin/webpack --config webpack/webpack.build.config.js --progress --colors",
     "dev": "./node_modules/.bin/webpack-dev-server --config webpack/webpack.dev.config.js --progress --colors --inline --hot"

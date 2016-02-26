@@ -3,7 +3,7 @@ import echarts from 'echarts'
 
 let LiveChartViewLine = React.createClass({
     componentDidMount: function() {
-        let mychart = echarts.init($('#dashBoradChartView_line')[0],'shine');
+        let mychart = echarts.init($('#dashBoradChartView_line')[0],'dark');
         let option = {
             tooltip: {
                 trigger: 'axis'

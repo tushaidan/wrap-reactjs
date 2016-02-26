@@ -22,8 +22,7 @@ var config = _.merge(baseConfig, {
         devtool: 'eval',
         port: 14602,
         hot: true,
-        inline: true,
-        watch:true
+        inline: true
     },
     devtool: 'eval'
 

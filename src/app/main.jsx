@@ -13,7 +13,6 @@ require("easy-pie");
 require("sparkline");
 require('jvectormap');
 require('jvectormap-world-mill-en');
-require('d3');
 
 window.SMARTADMIN_GLOBALS = require('./config/config');
 

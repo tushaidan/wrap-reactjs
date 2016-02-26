@@ -12,15 +12,13 @@ import LoginInfo from '../../../components/user/components/LoginInfo.jsx'
 
 import AsideChat from '../../../components/chat/components/AsideChat.jsx'
 
-import RecentProjects from './header/RecentProjects.jsx'
-
 let rawItems = require('json!../../config/menu-items.json').items;
 
 let Navigation = React.createClass({
     render: function () {
         return (
             <aside id="left-panel">
-                <RecentProjects />
+                <LoginInfo />
                 <nav>
                     <SmartMenu rawItems={rawItems} />
                     <AsideChat />
