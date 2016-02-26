@@ -1,19 +1,20 @@
 import React from 'react'
-import {findDOMNode} from 'react-dom'
+import ReactDOM from 'react-dom'
 import ScriptLoader from '../../utils/mixins/ScriptLoader.jsx'
 import ElementHolder from '../../utils/mixins/ElementHolder.jsx'
 
 
 let Summernote = React.createClass({
+    mixins: [ScriptLoader, ElementHolder],
     componentDidMount: function () {
-        ScriptLoader.loadScript('/vendor.ui.js').then(function(){
-            $(findDOMNode(this)).summernote({
+        this.loadScript('/vendor.ui.js').then(function(){
+            $(this.getHold()).summernote({
                 height: this.props.height || 270
             })
         }.bind(this))
     },
     componentWillUnmount: function(){
-        $(findDOMNode(this)).summernote('destroy');
+        $(this.getHold()).summernote('destroy');
     },
     render: function () {
         let {children, ...props} = this.props;

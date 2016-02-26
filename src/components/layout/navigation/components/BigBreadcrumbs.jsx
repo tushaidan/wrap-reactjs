@@ -42,9 +42,9 @@ let BigBreadcrumbs = React.createClass({
 
 
         return (
-            <div className={this.props.className + ' big-breadcrumbs'}>
-                <h1 className="page-title txt-color-blueDark">
-                    <i className={this.state.icon}/>{' ' + first}
+            <div className={this.props.className + ' big-breadcrumbs'} style={{marginLeft:20}}>
+                <h1 className="page-title txt-color-blueDark" style={{marginBottom:10,marginTop:10}}>
+                    {/*<i className={this.state.icon}/>*/}{' ' + first}
                     {_.tail(this.state.items).map(function (item) {
                         return <span key={_.uniqueId('big-breadcrumb-')}>
                             <span className="page-title-separator">&gt;</span>

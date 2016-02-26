@@ -30,7 +30,7 @@
     "json-loader": "^0.5.4",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
-    "lodash": "^4.2.x",
+    "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-addons-linked-state-mixin": "^0.14.3",
     "react-bootstrap": "^0.28.1",
@@ -47,9 +47,9 @@
     "webpack-dev-server": "^1.14.0",
     "yargs": "^3.31.0",
     "react-redux": "^4.0.6",
-    "redux": "^3.x.x"
+    "redux": "^3.0.5"
   },
   "dependencies": {
-    "lodash": "^4.2.1"
+    "echarts": "^2.2.7-beta7"
   }
 }

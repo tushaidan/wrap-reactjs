@@ -1,6 +1,4 @@
 window.jQuery = window.$ =  require("jquery");
-window._ =  require("lodash");
-
 require("jquery-ui");
 require("bootstrap");
 require("fastclick");

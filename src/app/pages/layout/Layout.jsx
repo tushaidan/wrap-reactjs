@@ -15,6 +15,9 @@ let Layout = React.createClass({
     componentWillMount: function () {
         UserActions.init();
     },
+    componentDidMount:function(){
+        /*this.props.history.pushState(null,'/dashboard');*/
+    },
     render: function(){
         return (
             <div>
@@ -23,13 +26,13 @@ let Layout = React.createClass({
 
                 <div id="main" role="main">
                     <DemoStylesSwitcher />
-                    <Ribbon />
+                    {/*<Ribbon />*/}
 
                     {this.props.children}
                 </div>
 
-                <Footer />
-                <Shortcut />
+                {/*<Footer />
+                <Shortcut />*/}
             </div>
         )
     }

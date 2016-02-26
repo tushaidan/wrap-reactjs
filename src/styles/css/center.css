@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'dashboard';
+  src: <source> [<format>][,<source> [<format>]];
+}
+
 .dashBorad-div{
 	float: left;
     margin-top: 15px;
@@ -5,6 +10,7 @@
 
 .dashboard-img{
 	width: 70px;
+	margin-left: 10px;
 }
 
 .dashBorad-div-1{
@@ -15,7 +21,8 @@
 
 .dashBorad-div-2{
 	height: 80px;
-	font-size: 50px;
+	font-size: 45px;
+	font-family: 幼圆;
 }
 
 .pricing-big .panel-heading{
@@ -29,15 +36,16 @@
 .dashBorad-p{
 	margin: 0 0 0 0;
 	font-size: 10px;
-	color: rgb(143, 177, 162);
+	color: #6A8CB7;
 }
 
 #dashBoradChartView_gauge{
-	height: 400px;
+	height: 225px;
+	background-color: rgba(0, 0, 0,0.2) !important
 }
 #dashBoradChartView_line{
-	height: 400px;
-	background-color: rgb(50, 118, 177) !important;
+	height: 225px;
+	background-color: rgba(0, 0, 0,0.2) !important
 }
 .chart-bar{
 	background-color: #5ea9f8;
@@ -46,9 +54,87 @@
 }
 
 .head-txt{
-	margin-top: 30px;
+	margin-top: 20px;
 	color: white;
 }
 .table>thead>tr{
-	background-image:-webkit-linear-gradient(top,#3276B1 0,#3276B1 100%);
+	background: rgba(0, 0, 0,0) !important;
+}
+
+.panel-primary>.panel-heading{
+	background-color: rgba(0, 0, 0,0.2);
+	border-color:#3A5A83;
+}
+
+#content{
+	padding-top:0px;
+	margin-left:-1px;
+}
+
+#content>.row{
+	background-color: #41678E;
+}
+
+#content>#widget-grid{
+	padding-top: 20px;
+}
+/* #header{
+	background-color: #365778 !important;
+}*/
+
+#logo-group{
+	background-color: #41678E;
+}
+
+#left-panel>nav{
+	background-color:#41678E !important
+}
+
+.project-context.hidden-xs.dropdown{
+	height: 46px;
+	width: 100%;
+	padding-top: 15px;
+    padding-left: 37px;
+	background-color: #36587B;
+}
+
+body{
+	font-family: cursive;
+}
+
+.big-breadcrumbs .page-title span{
+	font-size: 14px;
+	vertical-align: middle;
+	color: #648FC2;
+}
+
+.big-breadcrumbs .page-title span>span{
+	font-size: 16px;
+	vertical-align: middle;
+	color: white;
+}
+
+.page-title span{
+	font-size: 16px;
+}
+
+.page-title-separator{
+	color: #648FC2 !important;	
+}
+
+nav ul li a{
+	color: #648FC2 !important;
+}
+
+.smart-style-5 nav ul .active>a{
+	color: white !important;
+}
+.smart-style-5 .table{
+	background: 0 0 !important;
+}
+nav ul{
+	background-color: rgba(0, 0, 0, 0.4);  
+}
+.demo{
+	display: none;
 }

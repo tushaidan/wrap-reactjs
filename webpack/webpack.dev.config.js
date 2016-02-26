@@ -20,7 +20,7 @@ var config = _.merge(baseConfig, {
     devServer: {
         contentBase: 'web',
         devtool: 'eval',
-        port: 14602,
+        port: 14608,
         hot: true,
         inline: true
     },

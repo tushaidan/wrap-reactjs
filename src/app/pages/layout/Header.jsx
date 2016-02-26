@@ -8,28 +8,26 @@ import FullScreen from '../../../components/layout/actions/FullScreen.jsx'
 import ToggleMenu from '../../../components/layout/actions/ToggleMenu.jsx'
 import SpeechButton from '../../../components/layout/actions/SpeechButton.jsx'
 import SearchMobile from '../../../components/layout/actions/SearchMobile.jsx'
-
+import LoginInfo from '../../../components/user/components/LoginInfo.jsx'
 import DeviceDetect from '../../../components/layout/tools/DeviceDetect.jsx'
 import ActivitiesDropdown from '../../../components/activities/ActivitiesDropdown.jsx'
 import LanguageSelector from '../../../components/i18n/LanguageSelector.jsx'
 
-import RecentProjects from './header/RecentProjects.jsx'
+import '../../../styles/css/header.css'
 
 let Header = React.createClass({
+    componentDidMount:function(){
+        $('.ajax-dropdown').css("left",$('.ActivitiesDropdown-pull-right').position().left-172);
+    },         
     render: function () {
-        return <header id="header">
+        return <header id="header" style={{backgroundColor:'#36587B !important'}}>
             <div id="logo-group">
                 <span id="logo">
                     <img src="styles/img/logo.png" // place your logo here
                          alt="SmartAdmin"/>
                 </span>
-                {/* Note: The activity badge color changes when clicked and resets the number to 0
-                 Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications */}
-
-                <ActivitiesDropdown url={'api/activities/activities.json'} />
             </div>
 
-            <RecentProjects />
             <div className="pull-right"  /*pulled right: nav area*/ >
 
 
@@ -74,6 +72,17 @@ let Header = React.createClass({
                         </ul>
                     </li>
                 </ul>
+
+                <LoginInfo />
+                {/* Note: The activity badge color changes when clicked and resets the number to 0
+                 Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications */}
+                <div className="ActivitiesDropdown-pull-right">
+                    <ActivitiesDropdown url={'api/activities/activities.json'} />
+                </div>
+
+                <div className="ActivitiesDropdown2-pull-right">
+                    <ActivitiesDropdown url={'api/activities/activities.json'} />
+                </div>
 
                 {/* logout button */}
                 <div id="logout" className="btn-header transparent pull-right">
@@ -124,7 +133,7 @@ let Header = React.createClass({
                 <FullScreen className="btn-header transparent pull-right" />
 
 
-                {/* multiple lang dropdown : find all flags in the flags page */}
+                {/* multiple lang dropdown : find all  flagflags in thes page */}
                 <LanguageSelector />
 
 

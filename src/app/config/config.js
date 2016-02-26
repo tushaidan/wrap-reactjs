@@ -5,7 +5,7 @@
 var config = {
     menu_speed: 200,
 
-    smartSkin: "smart-style-0",
+    smartSkin: "smart-style-5",
 
     apiRootUrl: "",
     buildUrl: "build",

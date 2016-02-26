@@ -26,6 +26,9 @@ let SmartMenuItem = React.createClass({
     shouldComponentUpdate: function(){
         return false
     },
+    componentDidMount:function(){
+        //debugger;
+    },
     _handleNav: function(data){
 
         let item = this.props.item;
@@ -77,7 +80,7 @@ let SmartMenuItem = React.createClass({
         ) : null;
 
         var collapseSign = item.items ? (
-            item.isOpen ? <b className="collapse-sign"><em className="fa fa-minus-square-o"/></b> : <b className="collapse-sign"><em className="fa fa-plus-square-o"/></b>
+            item.isOpen ? <b className="collapse-sign"><em className="glyphicon glyphicon-chevron-down"/></b> : <b className="collapse-sign"><em className="glyphicon glyphicon-chevron-right"/></b>
         ) : null;
 
         let link = item.route ? <Link to={item.route} title={item.title} onClick={this._handleClick}>
@@ -85,7 +88,7 @@ let SmartMenuItem = React.createClass({
         </Link> : <a href={item.href || '#'} onClick={this._handleClick} title={item.title}>
             {icon} {title} {badge}{collapseSign}
         </a>;
-
+        debugger;
         let itemClasses = classnames({
             open: item.isOpen,
             active: item.isActive

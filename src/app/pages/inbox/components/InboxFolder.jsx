@@ -25,7 +25,7 @@ let InboxFolder = React.createClass({
     _getAttachmentsTooltip: function (message) {
         if (message.attachments && message.attachments.length) {
             let tooltipId = 'message-' + message._id + "-attachments-tooltip";
-            let tooltipLabel = 'FILES: ' + _.map(message.attachments, 'name').join(', ');
+            let tooltipLabel = 'FILES: ' + _.pluck(message.attachments, 'name').join(', ');
             return (
                 <OverlayTrigger placement="left" overlay={<Tooltip id={tooltipId}>{tooltipLabel}</Tooltip>}>
                     <span className="txt-color-darken"><i className="fa fa-paperclip fa-lg"/></span>

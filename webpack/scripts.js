@@ -3,13 +3,12 @@ var scripts = {
 
         "react/lib": "/node_modules/react/lib",
         "react": "/node_modules/react/dist/react.min.js",
-        "redux": "/node_modules/redux/dist/redux.min.js",
         "react-dom": "/node_modules/react-dom/dist/react-dom.min.js",
         "react-bootstrap": "/node_modules/react-bootstrap/dist/react-bootstrap.min.js",
         "react-router": "/node_modules/react-router/umd/ReactRouter.min.js",
         "history/lib": "/node_modules/history/umd/History.min.js",
 
-        //"lodash": "/bower_components/lodash/dist/lodash.js",
+        "lodash": "/bower_components/lodash/lodash.min.js",
 
         "jquery": "/bower_components/jquery/dist/jquery.min.js",
         "jquery-ui": "/bower_components/jquery-ui/jquery-ui.min.js",
@@ -128,51 +127,51 @@ var scripts = {
             //"smartwidgets",
             //"jvectormap"
         ] ,
-        "vendor.ui": [
-            "select2",
-            "script!summernote",
-            "script!markdown",
-            "script!he",
-            "script!to-markdown",
-            "script!bootstrap-markdown",
-            "bootstrap-slider",
-            "bootstrap-progressbar",
-            "jquery-validate",
-            "jquery-maskedinput",
-            "bootstrap-validator",
-            "ionslider",
-            "nouislider",
-            "bootstrap-duallistbox",
-            "bootstrap-timepicker",
-            "clockpicker",
-            "bootstrap-colorpicker",
-            "bootstrap-tagsinput",
-            "jquery-knob",
-            "x-editable",
-            "fuelux-wizard",
-            "dropzone",
-            "jquery-nestable",
-
-        ],
-        "vendor.datatables": [
-            "datatables.net",
-            "datatables.net-bs",
-            "datatables.net-buttons",
-            "datatables.net-buttons.bootstrap",
-            "datatables.net-buttons.print",
-            "datatables.net-buttons.flash",
-            "datatables.net-buttons.colVis",
-            "datatables.net-responsive",
-            "datatables.net-responsive.bootstrap"
-        ],
-        "vendor.graphs": [
-            'script!raphael',
-            'script!morris',
-            'script!dygraphs',
-            'script!chartjs',
-            'script!highcharts',
-            'script!highchartTable'
-        ]
+        //"vendor.ui": [
+        //    "select2",
+        //    "script!summernote",
+        //    "script!markdown",
+        //    "script!he",
+        //    "script!to-markdown",
+        //    "script!bootstrap-markdown",
+        //    "bootstrap-slider",
+        //    "bootstrap-progressbar",
+        //    "jquery-validate",
+        //    "jquery-maskedinput",
+        //    "bootstrap-validator",
+        //    "ionslider",
+        //    "nouislider",
+        //    "bootstrap-duallistbox",
+        //    "bootstrap-timepicker",
+        //    "clockpicker",
+        //    "bootstrap-colorpicker",
+        //    "bootstrap-tagsinput",
+        //    "jquery-knob",
+        //    "x-editable",
+        //    "fuelux-wizard",
+        //    "dropzone",
+        //    "jquery-nestable",
+        //    "script!ckeditor"
+        //],
+        //"vendor.datatables": [
+        //    "datatables.net",
+        //    "datatables.net-bs",
+        //    "datatables.net-buttons",
+        //    "datatables.net-buttons.bootstrap",
+        //    "datatables.net-buttons.print",
+        //    "datatables.net-buttons.flash",
+        //    "datatables.net-buttons.colVis",
+        //    "datatables.net-responsive",
+        //    "datatables.net-responsive.bootstrap"
+        //],
+        //"vendor.graphs": [
+        //    'script!raphael',
+        //    'script!morris',
+        //    'script!dygraphs',
+        //    'script!chartjs',
+        //    'script!highcharts',
+        //    'script!highchartTable'
+        //]
 
     },
     noParse: [
